@@ -1,16 +1,53 @@
-# React + Vite
+Bill Gates Spending Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple interactive web application inspired by the idea of spending Bill Gates’ fortune. Users can buy and sell various products while tracking the remaining balance in real time.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application starts with an initial balance of $100,000,000,000.
 
-## React Compiler
+A list of products is displayed. Products can be:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Based on the demo
 
-## Expanding the ESLint configuration
+Or completely fictional, defined by the developer
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Each product has a clearly defined price.
+
+Buying & Selling Logic
+
+When a product is purchased, Bill Gates’ balance decreases accordingly.
+
+When a product is sold, Bill Gates’ balance increases accordingly.
+
+The Buy button is disabled if:
+
+The product price is higher than the current balance.
+
+The Sell button is disabled if:
+
+The user has not purchased that product yet (quantity is zero).
+
+Purchased Products List
+
+All purchased products are listed at the bottom of the screen.
+
+For each purchased product, the following information is shown:
+
+Product name
+
+Quantity purchased
+
+Total cost for that product
+
+Goal
+
+The goal of this project is to practice front-end development concepts such as:
+
+State management
+
+Conditional rendering
+
+User interaction handling
+
+Dynamic UI updates based on business rules
