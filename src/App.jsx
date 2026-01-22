@@ -41,8 +41,9 @@ function App() {
             sell={() => handleSell(product.id)}
           />
         ))}
+
+        <Bill products={productsState} />
       </div>
-      <Bill products={productsState} />
     </>
   );
 }
